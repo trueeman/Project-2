@@ -1,0 +1,264 @@
+body {
+    background: #2c2c2c;
+    margin: 0;
+    padding: 0;
+}
+
+#h1 {
+    position: absolute;
+    color: white;
+    font-family: 'Georgia';
+    left: 10%;
+}
+
+
+
+
+/* De navigatie bar (regel 22 t/m 77). */
+
+
+
+
+.side_nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background: #181616;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 6rem;
+    box-shadow: 0rem 0.2rem 1rem 0rem rgb(0,0,0,0.2);
+}
+
+.side_nav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #8b8b8b;
+    display: block;
+    transition: 0.3s;
+}
+    
+.side_nav a:hover {
+    color: #f1f1f1;
+}
+    
+@media screen and (max-height: 450px) {
+    .side_nav {padding-top: 15px;}
+    .side_nav a {font-size: 18px;}
+}
+
+.hamburger {
+    width: auto;
+    height: 25px;
+    position: absolute;
+    top: 6%;
+    right: 5%;
+    cursor: pointer;
+}
+
+.close {
+    width: 30px;
+    height: auto;
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    cursor: pointer;
+}
+
+#copyright {
+    color: #8b8b8b;
+    position: absolute;
+    left: 8%;
+    bottom: 12%;
+}
+
+
+
+
+/* De hoofdpagina (regel 87 t/m 138). */
+
+
+
+
+.container {
+    position: absolute;
+    background: #1e1e1e;
+    top: 11%;
+    left: 3%;
+    width: 77%;
+    height: 82%;
+    border-radius: 5px; 
+}
+
+.game_container1 {
+    color: white;
+    background: #181616;
+    position: absolute;
+    top: 3%;
+    left: 3%;
+    width: 200px;
+    height: 250px;
+    text-align: center;
+}
+
+.game_container2 {
+    color: white;
+    background: #181616;
+    position: absolute;
+    top: 3%;
+    left: 52%;
+    width: 200px;
+    height: 250px;
+    text-align: center;
+}
+
+.game_container3 {
+    color: white;
+    background: #181616;
+    position: absolute;
+    top: 54.5%;
+    left: 27%;
+    width: 200px;
+    height: 250px;
+    text-align: center;
+}
+
+.game_container4 {
+    color: white;
+    background: #181616;
+    position: absolute;
+    top: 54.5%;
+    left: 79%;
+    width: 200px;
+    height: 250px;
+    text-align: center;
+}
+
+
+
+
+/* De game van Diego (regel 148 t/m 180). */
+
+
+
+
+#game_board{
+    position: absolute;
+    top: 10%;
+    left: 25%;
+}
+
+.game_container {
+    text-align: center;
+}
+
+#game_board {
+    top: 14%;
+    border: 2px solid #ffffff;
+}
+
+#score_text {
+    font-family: "consolas";
+    font-size: 90px;
+    color: white;
+}
+
+#reset_button {
+    font-family: "Arial";
+    font-size: 22px;
+    position: absolute;
+    top: 87%;
+    left: 46%;
+    width: 100px;
+    height: 50px;
+    border: 2px solid;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+
+
+/* De portfolio pagina van Diego (regel 191 t/m 206. */
+
+
+
+
+.Diego {
+    position: absolute;
+    border-radius: 5px;
+    height: 50vh;
+    top: 0%;
+    left: 0%;
+}
+
+.text_box1 {
+    font-size: 18px;
+    color: white;
+    width: 24%;
+    position: absolute;
+    left: 20%;
+    top: 0%;
+}
+
+
+
+
+/* De favoriete games pagina van Diego (regel t/m ). */
+
+
+
+
+.container_alt {
+    position: absolute;
+    background: #1e1e1e;
+    top: 4%;
+    left: 2%;
+    width: 80%;
+    height: 92%;
+    border-radius: 5px; 
+}
+
+#er_titel {
+    color: #e9d45b;
+    left: 9%;
+    position: absolute;
+}
+
+.elden_ring {
+    width: 25%;
+    top: 15%;
+    left: 5%;
+    position: absolute;
+}
+
+#er_tekst {
+    color: #e9d45b;
+    top: 40%;
+    left: 5%;
+    position: absolute;
+}
+
+#terraria_titel {
+    color: #87e288;
+    right: 14%;
+    position: absolute;
+}
+
+.terraria {
+    width: 25%;
+    top: 15%;
+    right: 5%;
+    position: absolute;
+}
+
+#terraria_tekst {
+    color: #87e288;
+    top: 40%;
+    right: 3%;
+    position: absolute;
+}

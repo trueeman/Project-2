@@ -1,0 +1,126 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --orange: #7b00ff;
+  --winning-blocks: #cac4c4;;
+}
+
+body {
+  color: var(--orange);
+  font-family: "Finger Paint", cursive;
+}
+h1 {
+  font-size: 54px;
+  text-transform: uppercase;
+}
+
+.container {
+  padding: 40px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #cac4c4;
+}
+
+#gameboard {
+  width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+.box {
+  height: 100px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--orange);
+  font-size: 120px;
+  border-right: 2px solid;
+  border-bottom: 2px solid;
+}
+.box:nth-child(3n) {
+  border-right: none;
+}
+.box:nth-child(6) ~ .box {
+  border-bottom: none;
+}
+button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: var(--orange);
+  color: #333;
+  border-color: var(--orange);
+  font-size: 18px;
+  transition: 200ms transform;
+  font-weight: 600;
+}
+button:hover {
+  cursor: pointer;
+  transform: translateY(-2px);
+}
+
+
+
+.side_nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background: #181616;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 6rem;
+  box-shadow: 0rem 0.2rem 1rem 0rem rgb(0,0,0,0.2);
+}
+
+.side_nav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #8b8b8b;
+  display: block;
+  transition: 0.3s;
+}
+  
+.side_nav a:hover {
+  color: #f1f1f1;
+}
+  
+@media screen and (max-height: 450px) {
+  .side_nav {padding-top: 15px;}
+  .side_nav a {font-size: 18px;}
+}
+
+.hamburger {
+  width: auto;
+  height: 25px;
+  position: absolute;
+  top: 6%;
+  right: 5%;
+  cursor: pointer;
+}
+
+.close {
+  width: 30px;
+  height: auto;
+  position: absolute;
+  top: 5%;
+  right: 10%;
+  cursor: pointer;
+}
+
+#copyright {
+  color: #8b8b8b;
+  position: absolute;
+  left: 8%;
+  bottom: 12%;
+}
