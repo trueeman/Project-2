@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Project-2-main/Project/Game Project/home/style.css">
+    <title>Pong</title>
+</head>
+<body>
+    <div id="nav" class="side_nav">
+        <img src="/Project-2-main/Project/Game Project/afbeeldingen/close.png" class="close" onclick="close_nav()">
+            <a href="/Project-2-main/Project/Game Project/home/index.html">Games</a>
+                <br>
+                <br>
+            <a href="/Project-2-main/Project/Game Project/berkay/">Portfolio van Berkay</a>
+            <a href="/Project-2-main/Project/Game Project/diego/portfolio/portfolio.html">Portfolio van Diego</a>
+            <a href="/Project-2-main/Project/Game Project/shiva/portfolio/index.html">Portfolio van Shiva</a>
+            <a href="/Project-2-main/Project/Game Project/">Portfolio van Ion</a>
+                <br>
+                <br>
+            <a href="/Project-2-main/Project/Game Project/berkay/favo games/favo_game_berkay.html">Favoriete games van Berkay</a>
+            <a href="/Project-2-main/Project/Game Project/diego/favo games/favo_games.html">Favoriete games van Diego</a>
+            <a href="/Project-2-main/Project/Game Project/shiva/favo games/index.html">Favoriete games van Shiva</a>
+            <a href="/Project-2-main/Project/Game Project/">Favoriete games van Ion</a>
+  
+            <p id="copyright">©Diego, Berkay, Shiva en Ion.</p>
+    </div>
+        <img src="/Project-2-main/Project/Game Project/afbeeldingen/menu.png" class="hamburger" onclick="open_nav()">
+
+    <div class="game_container">
+        <div id="score_text">0 : 0</div>
+        <button id="reset_button">Reset</button>
+    </div>
+
+    <canvas id="game_board" width="750" height="500"></canvas>
+
+
+    <div>
+        <audio id="audio">
+            <source src="lo-fi 2.wav" type="audio/mpeg"> 
+        </audio>
+
+        <button id="play_pause_button" onclick="play_pause()">Play &#9658;</button>
+        &nbsp;
+        &nbsp;
+        <button id="stop" onclick="stop()">Stop &#9611;</button>
+    </div>
+
+    <script src="/Project-2-main/Project/Game Project/home/app.js"></script>
+</body>
+</html>

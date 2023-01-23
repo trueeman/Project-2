@@ -1,0 +1,95 @@
+#container #wiebenik {
+    width: 430px;
+    border-radius: 40px;
+    align-items: flex-start; 
+    position: absolute;   
+    left: 3%;
+    top: 300px;
+    background-color:rgb(75, 245, 112);
+    text-align: center;
+}
+
+#container #watzijnmijnhobbies{
+    width: 500px;
+    border-radius: 40px;
+    position: absolute;
+    left: 3%;   
+    top: 470px;
+    background-color:rgb(75, 245, 112);
+    text-align: center;
+}
+
+#container #infoovermij{
+    width: 300px;
+    border-radius: 40px;
+    position: absolute;
+    left: 39%;   
+    top: 800px;
+    background-color:rgb(75, 245, 112);
+    text-align: center;
+}
+#fotos{
+    left: 50%;
+    position: absolute;
+    top: 200px;
+
+}
+
+
+
+.side_nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background: #181616;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 6rem;
+    box-shadow: 0rem 0.2rem 1rem 0rem rgb(0,0,0,0.2);
+}
+
+.side_nav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #8b8b8b;
+    display: block;
+    transition: 0.3s;
+}
+    
+.side_nav a:hover {
+    color: #f1f1f1;
+}
+    
+@media screen and (max-height: 450px) {
+    .side_nav {padding-top: 15px;}
+    .side_nav a {font-size: 18px;}
+}
+
+.hamburger {
+    width: auto;
+    height: 25px;
+    position: absolute;
+    top: 6%;
+    right: 5%;
+    cursor: pointer;
+}
+
+.close {
+    width: 30px;
+    height: auto;
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    cursor: pointer;
+}
+
+#copyright {
+    color: #8b8b8b;
+    position: absolute;
+    left: 8%;
+    bottom: 12%;
+}
